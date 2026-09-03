@@ -1,0 +1,91 @@
+# User Configuration Manager
+
+## Problem Statement
+
+In this lab, I built a **User Configuration Manager** that allows users to manage their settings such as theme, language, and notifications.
+
+The program provides functions to:
+
+* Add a new setting
+* Update an existing setting
+* Delete a setting
+* View all current settings
+
+### Requirements
+
+The program should define the following functions:
+
+#### `add_setting(settings, setting)`
+
+Adds a new key-value pair to the settings dictionary.
+
+* Convert the key and value to lowercase.
+* If the setting already exists, return an appropriate error message.
+* If it does not exist, add it to the dictionary and return a success message.
+
+#### `update_setting(settings, setting)`
+
+Updates an existing setting.
+
+* Convert the key and value to lowercase.
+* If the setting exists, update its value.
+* If it does not exist, return an appropriate error message.
+
+#### `delete_setting(settings, key)`
+
+Deletes a setting from the dictionary.
+
+* Convert the key to lowercase.
+* If the setting exists, remove it.
+* If it does not exist, return `Setting not found!`.
+
+#### `view_settings(settings)`
+
+Displays all current settings.
+
+* If there are no settings, return `No settings available.`
+* Otherwise, display the settings with each key capitalized and each setting on a new line.
+
+## Example
+
+Given:
+
+```python
+{
+    "theme": "dark",
+    "notifications": "enabled",
+    "volume": "high"
+}
+```
+
+The expected display is:
+
+```text
+Current User Settings:
+Theme: dark
+Notifications: enabled
+Volume: high
+```
+
+## My Solution
+
+The solution is implemented in:
+
+`user_configuration_manager.py`
+
+## Concepts Practiced
+
+* Python functions
+* Dictionaries
+* Tuples
+* Conditional statements
+* String methods
+* Dictionary operations
+* Return statements
+* Basic problem solving
+
+## Status
+
+✅ Completed
+
+This project is part of my Python learning journey through freeCodeCamp.
